@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Signika&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Cabin|Darker+Grotesque|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Grenze|Poppins|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Grenze|Kanit|Poppins|Roboto+Slab&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  .header{
+      background-color: #ff1a1a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 50px;
+      width: 100%;
+      height: 90px;
+  }
+  .nav{
+      width: 100%;
+      height: 60px;
+      background-color: #ff0000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 3;
+  }
+  .nav ul .active{
+      color: #33ff33;
+      border-bottom: 3px solid white;
+  }
+  #logo{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-family: 'Pacifico', cursive;
+
+  }
+  .search input[type="search"]{
+      border: none;
+      background-color: #ff4d4d;
+      border-radius: 4px;
+      padding: 10px;
+      color:#b3ffb3;
+      width: 250px;
+  }
+  input[type="search"]{
+    border: none;
+    background-color: #ff4d4d;
+    border-radius: 4px;
+    padding: 10px;
+    color:#b3ffb3;
+    width: 120px;
+}
+  .burger{
+      display: none;
+      cursor: pointer;
+  }
+  .burger div{
+      width: 25px;
+      height: 3px;
+      border-radius: 1px;
+      background-color: white;
+      margin: 5px;
+      transition: all 0.3s ease;
+  }
+
+  .nav-links li{
+      list-style-type: none;
+      display: inline-block;
+      padding-right: 50px;
+      padding-left: 12px;
+  }
+  .nav-links li a{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;    
+      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Darker Grotesque', sans-serif;
+      font-family: 'Bitter', serif;
+      font-family: 'Cabin', sans-serif;
+      padding: 5px;
+  }
+  .nav-links li a:hover{
+      color: #33ff33;
+      border-bottom: 3px solid white;
+  }
+  i{
+      margin-right: 20px;
+      cursor: pointer;
+      padding-right:  30px;
+      padding-bottom: 15px;
+  }
+  .icons{
+      color: white;
+  }
+  .icons:hover{
+      color: #33ff33;
+  }
+  .sec1{
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 481.5px;
+      background-image: url(pics/cub.jpg);
+      background-size: 100% 100%;
+  }
+  .dark-cover{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+  }
+  .section-message{
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .first-heading{
+    position: relative;
+      color: white;
+      font-size: 50px;
+    font-family: 'Grenze', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  .second-info button{
+    position: relative;
+      border: none;
+      cursor: pointer;
+      border: 2px solid white;
+      padding: 10px;
+      background: none;
+      margin-right: 10px;
+      border-radius: 5px;
+  }
+  .second-info button a{
+      text-decoration: none;
+      color: white;
+  }
+  .second-info button:hover{
+      border: 2px solid#33ff33;
+      background-color: #33ff33;
+      color: #33ff33;
+  }
+  .sec2{
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .heading1 h1{
+      text-align: center;
+      color: #ff0000;
+    font-family: 'Grenze', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Baloo Chettan', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-size: 60px;
+  }
+  .g-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  .sec2 #sec{
+      width: 380px;
+      height: 290px;
+  }
+  .feature-sec{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+[image],
+[title],
+[info]{
+    padding-bottom: 20px;
+}
+[title] h3{
+    text-align: center;
+
+}
+[info] p{
+    text-align: center;
+}
+/* DROPDOWN MENU */
+.mobile-nav {
+    display: none;
+}
+  @media screen and (max-width: 1000px) {
+        .header{
+             height: 60px;
+           }
+        .burger{
+             display: block;
+           }
+       .search input[type="search"]{
+            display: none;
+        }
+        .nav{
+            display: none;
+        }
+        /* DROPDOWN MENU */
+        body{
+            overflow-x: hidden;
+        }
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #ff1a1a;
+    width: 55%;
+    height: 450px;
+    align-content: space-between;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 2;
+}
+.mobile-nav li{
+    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    padding-bottom: 5px;
+    list-style-type: none;
+}
+.mobile-nav li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.mo{
+    padding-right: 10px;
+    margin: 0;
+}
+.sec1{
+    height: 300px;
+    background-image: url(pics/cub2.jpg);
+    background-size: 100% 100%;
+}
+.dark-cover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.first-heading{
+    font-size: 19px;
+}
+.sec2{
+    height: 950px;
+}
+.heading1 h1{
+    font-size: 40px;
+}
+
+
+  }
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+  
