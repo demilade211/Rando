@@ -327,6 +327,7 @@
 #sec{
     margin: 10px 0px;
     width: 340px;
+    box-shadow: none;
 }
 .sec3{
     height: 1300px;
