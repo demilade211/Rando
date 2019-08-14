@@ -323,12 +323,10 @@
     font-size: 41px;
 }
 .g-container{
-    border: 1px solid black;
     box-shadow: none;
 }
 #sec{
     flex-wrap: wrap;
-    border: 1px solid black;
     margin: 10px 0px;
     width: 330px;
     box-shadow: none;
