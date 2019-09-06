@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="animate.css-master/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
@@ -25,13 +26,13 @@
        <nav class="mobile-nav">
               <ul>
                       <li><input type="search" placeholder="Enter search"></li>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">Games</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Results</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#"> 
+                      <li><a href="#" class="m-link">Home</a></li>
+                      <li><a href="#" class="m-link">Games</a></li>
+                      <li><a href="#" class="m-link">Blog</a></li>
+                      <li><a href="#" class="m-link">Results</a></li>
+                      <li><a href="#" class="m-link">Contact</a></li>
+                      <li><a href="#" class="m-link">About</a></li>
+                      <li><a href="#" class="m-link"> 
                         <i class="fa fa-instagram fa-1x icons mo" aria-hidden="true"></i>
                         <i class="fa fa-facebook-official fa-1x icons mo" aria-hidden="true"></i>
                         <i class="fa fa-twitter fa-1x icons mo" aria-hidden="true"></i>
@@ -61,16 +62,21 @@
     <section class="sec1">
        <div class="sec1 dark-cover">
             <div class="section-message">
-                    <div style="text-align: center" class="first-heading">Hi There,Welcome To Rando Your Surest Betting App</div>
+                    <div style="text-align: center" class="first-heading animated fadeInDown">Hi There,Welcome To Rando Your Surest Betting App</div>
                     <div class="second-info">
-                        <span><button id="play"><a href="#">PLAY NOW</a></button></span>
-                        <span><button id="learn"><a href="#learn-how">LEARN HOW TO</a></button></span>
+                        <span><button id="play" class="animated fadeInLeft"><a href="#play-demo">PLAY NOW</a></button></span>
+                        <span><button id="learn" class="animated fadeInRight"><a href="#learn-how">LEARN HOW TO</a></button></span>
                     </div>
        </div>
         </div>
     </section>
     <section class="sec2">
        <div class="heading"><h1>Rando Features</h1></div>
+       <div class="topic-head">
+          <div class="topic">
+              <h5>FEATURES</h5>
+          </div>
+        </div>
        <div class="g-container">
         <div id="sec">
             <div image><img src="pics/shield.png"></div>
@@ -95,8 +101,13 @@
         </div>
        </div>
     </section>
-    <section class="sec3">
-        <div id="learn-how" class="heading"><h1>Our Amazing Games Include</h1></div>
+    <section class="sec3" id="learn-how">
+        <div class="heading"><h1>Our Amazing Games Include</h1></div>
+        <div class="topic-head">
+            <div class="topic">
+                <h5>LEARN HOW TO PLAY</h5>
+            </div>
+          </div>
         <div a-container>
             <div inside-a-container>
                 <div icon><img src="pics/dice.png"></div>
@@ -106,7 +117,7 @@
                 </div>
                 <div learn-button>
                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalScrollable1">
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalScrollable1">
     Learn More
   </button>
   
@@ -148,7 +159,7 @@
                 </div>
                 <div learn-button>
                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalScrollable2">
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalScrollable2">
     Learn More
   </button>
   
@@ -189,7 +200,7 @@
                 </div>
                 <div learn-button>
                     <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalScrollable3">
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalScrollable3">
     Learn More
   </button>
   
@@ -225,6 +236,230 @@
         </div>
         
      </section>
+        
+     <section class="sec4" id="play-demo">
+      <div id="learn-how" class="heading"><h1>Play Our Demo</h1></div>
+      <div class="topic-head">
+        <div class="topic">
+            <h5>GAMES (3)</h5>
+        </div>
+      </div>
+      <div class="table">
+          <div class="table-head">
+              <h5>Rando Numbers (2)</h5>
+          </div>
+          <div class="table-row">
+              <div class="column"><p>Random Hole</p></div>
+              <div class="column">
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        1-Direct<br> 1.5
+                    </div>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="mrow" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header btn-danger">
+                              <h5 class="modal-title" id="exampleModalScrollableTitle">Place A Bet</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <p></p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <div class="column">
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        2-Direct<br> 2.0
+                    </div>
+                </div>
+              </div>
+              <div class="column">
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        3-Direct<br> 2.5
+                    </div>
+                </div>
+              </div>
+              <div class="column">
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        4-Direct<br> 3.0
+                    </div>
+                </div>
+              </div>
+              <div class="column">
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        5-Direct<br> 3.5
+                    </div>
+                </div>
+              </div>
+              <div class="column"  style="border-right: none";>
+                <div>
+                  <h5>+10</h5>
+                </div>
+              </div>
+          </div>
+          <div class="table-row">
+            <div class="column"><p>Same Hole</p></div>
+            <div class="column">
+              <div>
+                  <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                      1-Direct<br> 2.5
+                  </div>
+              </div>
+            </div>
+            <div class="column">
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        2-Direct<br> 3.0
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        3-Direct<br> 3.5
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        4-Direct<br> 4.0
+                    </div>
+                </div>
+            </div>
+            <div class="column" >
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        5-Direct<br> 5.0
+                    </div>
+                </div>
+            </div>
+            <div class="column" style="border-right: none";>
+              <div>
+                <h5>+10</h5>
+              </div>
+            </div>
+      </div>
+      <div class="table">
+        <div class="table-head">
+            <h5>Rando Colors (2)</h5>
+        </div>
+        <div class="table-row">
+          <div class="column"><p>Random Color</p></div>
+          <div class="column">
+            <div>
+                <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                    1-random<br> 1.5
+                </div>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+                <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                    2-random<br> 2.5
+                </div>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+                <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                    3-random<br> 3.0
+                </div>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+                <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                    4-random<br> 4.0
+                </div>
+            </div>
+          </div>
+          <div class="column"  style="border-right: none";>
+            <div>
+              <h5>+10</h5>
+            </div>
+          </div>
+      </div>
+      <div class="table-row">
+            <div class="column">
+               <div>
+                  <h5>Same Hole</h5>
+               </div>
+            </div>
+            <div class="column">
+                <div>
+                  <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                    All<br> 5.0
+                </div>
+                </div>
+            </div>
+            <div class="column"  style="border-right: none";>
+              <div>
+                <h5>+10</h5>
+              </div>
+            </div>
+      </div>
+        </div>
+      </div>
+      <div class="table">
+          <div class="table-head">
+              <h5>Rando Dice (2)</h5>
+          </div>
+          <div class="table-row">
+            <div class="column"><p>Correct Prediction Of Dice</p></div>
+            <div class="column">
+              <div>
+                  <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                      Both<br> 3.0
+                  </div>
+              </div>
+            </div>
+            <div class="column"  style="border-right: none";>
+              <div>
+                <h5>+10</h5>
+              </div>
+            </div>
+          </div>
+          <div class="table-row">
+              <div class="column">
+                <div>
+                    <p>One Correct Prediction</p>
+                </div>
+              </div>
+              <div class="column">
+                <div>
+                    <div type="button" class="btn btn-table" data-toggle="modal" data-target="#mrow">
+                        One<br> 3.0
+                    </div>
+                </div>
+              </div>
+              <div class="column"  style="border-right: none";>
+                <div>
+                  <h5>+10</h5>
+                </div>
+              </div>
+          </div>
+      </div>
+     </section>
+     <section class="sec5"></section>
+     <footer>
+        <p style="color: white"> &copy Rando 2019 All Rights Reserved </p>
+     </footer>
+
     <script src="home.js"></script>
     <script src="bootstrap-4.3.1-dist/js/jquery.min.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
